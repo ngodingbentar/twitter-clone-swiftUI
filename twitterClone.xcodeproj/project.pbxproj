@@ -40,6 +40,7 @@
 		5A67554328C4ED1900F1FED2 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A67554228C4ED1900F1FED2 /* AuthViewModel.swift */; };
 		5A67554528C50F4200F1FED2 /* UploadPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A67554428C50F4200F1FED2 /* UploadPhotoView.swift */; };
 		5A76E00428C5E34E002B808A /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A76E00328C5E34E002B808A /* ImagePicker.swift */; };
+		5A81D05D28C647B200E08768 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A81D05C28C647B200E08768 /* ImageUploader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		5A67554228C4ED1900F1FED2 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		5A67554428C50F4200F1FED2 /* UploadPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPhotoView.swift; sourceTree = "<group>"; };
 		5A76E00328C5E34E002B808A /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		5A81D05C28C647B200E08768 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 		5A6754EF28C4514700F1FED2 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				5A81D05C28C647B200E08768 /* ImageUploader.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -478,6 +481,7 @@
 				5A76E00428C5E34E002B808A /* ImagePicker.swift in Sources */,
 				5A6754E228C4507D00F1FED2 /* ContentView.swift in Sources */,
 				5A67551828C4908C00F1FED2 /* SideMenuOptionRowView.swift in Sources */,
+				5A81D05D28C647B200E08768 /* ImageUploader.swift in Sources */,
 				5A67553028C4D83900F1FED2 /* CustomInputField.swift in Sources */,
 				5A6754F928C4558900F1FED2 /* TweetRowViews.swift in Sources */,
 				5A67550C28C47CDE00F1FED2 /* TweetFilterViewModel.swift in Sources */,
