@@ -10,6 +10,7 @@ import Kingfisher
 
 struct SideMenuView: View {
     @EnvironmentObject var authViewModel: AuthViewModel
+    
     var body: some View {
         
         if let user = authViewModel.currentUser {
@@ -38,7 +39,7 @@ struct SideMenuView: View {
                 ForEach(SideMenuViewModel.allCases, id: \.rawValue) { viewModel in
                     if viewModel == .profile {
                         NavigationLink {
-                            ProfileView()
+                            ProfileView(user: user)
                         } label: {
                             SideMenuOptionRowView(viewModel: viewModel)
                         }
