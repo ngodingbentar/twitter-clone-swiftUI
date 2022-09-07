@@ -42,6 +42,7 @@
 		5A67554328C4ED1900F1FED2 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A67554228C4ED1900F1FED2 /* AuthViewModel.swift */; };
 		5A67554528C50F4200F1FED2 /* UploadPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A67554428C50F4200F1FED2 /* UploadPhotoView.swift */; };
 		5A76E00428C5E34E002B808A /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A76E00328C5E34E002B808A /* ImagePicker.swift */; };
+		5A7767E128C8784B00363BB2 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7767E028C8784B00363BB2 /* ProfileViewModel.swift */; };
 		5A81D05D28C647B200E08768 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A81D05C28C647B200E08768 /* ImageUploader.swift */; };
 		5A81D05F28C65F8900E08768 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A81D05E28C65F8900E08768 /* UserService.swift */; };
 		5A81D06128C6659200E08768 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A81D06028C6659200E08768 /* User.swift */; };
@@ -86,6 +87,7 @@
 		5A67554228C4ED1900F1FED2 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		5A67554428C50F4200F1FED2 /* UploadPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPhotoView.swift; sourceTree = "<group>"; };
 		5A76E00328C5E34E002B808A /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		5A7767E028C8784B00363BB2 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		5A81D05C28C647B200E08768 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		5A81D05E28C65F8900E08768 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		5A81D06028C6659200E08768 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -298,6 +300,7 @@
 			isa = PBXGroup;
 			children = (
 				5A67550B28C47CDE00F1FED2 /* TweetFilterViewModel.swift */,
+				5A7767E028C8784B00363BB2 /* ProfileViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -538,6 +541,7 @@
 				5A67550428C467D300F1FED2 /* NotificationsView.swift in Sources */,
 				5A67551C28C496DE00F1FED2 /* UserStatsView.swift in Sources */,
 				5A67552C28C4D01D00F1FED2 /* RegistrationView.swift in Sources */,
+				5A7767E128C8784B00363BB2 /* ProfileViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
