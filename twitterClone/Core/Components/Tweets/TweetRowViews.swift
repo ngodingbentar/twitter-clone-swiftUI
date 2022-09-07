@@ -6,38 +6,47 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct TweetRowViews: View {
+    let tweet: Tweet
+    
     var body: some View {
         VStack (alignment: .leading) {
             
             //profile image + user info + tweet
-            HStack(alignment: .top, spacing: 12) {
-                Circle()
-                    .frame(width: 56, height: 56)
-                    .foregroundColor(Color(.systemBlue))
-                
-                //user info & tweet caption
-                VStack(alignment: .leading, spacing: 4) {
-                    //User info
-                    HStack {
-                        Text("Dewa Qintoro")
-                            .font(.subheadline).bold()
+            if let user = tweet.user {
+                HStack(alignment: .top, spacing: 12) {
+                    KFImage(URL(string: user.profileImageUrl))
+                        .resizable()
+                        .scaledToFill()
+                        .clipShape(Circle())
+                        .frame(width: 56, height: 56)
+                        .foregroundColor(Color(.systemBlue))
+                    
+                    //user info & tweet caption
+                    VStack(alignment: .leading, spacing: 4) {
+                        //User info
                         
-                        Text("@deqin")
-                            .foregroundColor(.gray)
-                            .font(.caption)
+                        HStack {
+                            Text(user.fullname)
+                                .font(.subheadline).bold()
+                            
+                            Text("@\(user.username)")
+                                .foregroundColor(.gray)
+                                .font(.caption)
+                            
+                            Text("5D")
+                                .foregroundColor(.gray)
+                                .font(.caption)
+                        }
                         
-                        Text("5D")
-                            .foregroundColor(.gray)
-                            .font(.caption)
+                        //Tweet caption
+                        
+                        Text(tweet.caption)
+                            .font(.subheadline)
+                            .multilineTextAlignment(.leading)
                     }
-                    
-                    //Tweet caption
-                    
-                    Text("Siang yang panas")
-                        .font(.subheadline)
-                        .multilineTextAlignment(.leading)
                 }
             }
             //action buttons
@@ -88,8 +97,8 @@ struct TweetRowViews: View {
     }
 }
 
-struct TweetRowViews_Previews: PreviewProvider {
-    static var previews: some View {
-        TweetRowViews()
-    }
-}
+//struct TweetRowViews_Previews: PreviewProvider {
+//    static var previews: some View {
+//        TweetRowViews()
+//    }
+//}
